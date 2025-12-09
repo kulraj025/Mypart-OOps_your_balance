@@ -1,0 +1,19 @@
+OOPS_YOUR_BALANCE/
+│
+├── bankaccount.h
+├── bankaccount.cpp
+├── savingsaccount.h
+├── savingsaccount.cpp
+├── checkingaccount.h
+├── checkingaccount.cpp
+├── transaction.h
+├── transaction.cpp
+├── admin.h
+├── admin.cpp
+├── utils.h
+├── utils.cpp
+├── main.cpp
+│
+├── accounts_savings.txt        # all savings metadata, CSV lines
+├── accounts_checking.txt       # all checking metadata, CSV lines
+├── transaction.txt             # all transactions; add acc_no to each line
