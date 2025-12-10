@@ -1,5 +1,5 @@
 #include <windows.h>
-#include <iostream>
+#include <iostream> //input output
 #include <vector>
 #include <fstream>
 #include <sstream>
@@ -138,7 +138,7 @@ void createAccount(vector<SavingsAccount>& sa, vector<CheckingAccount>& ca) {
     cout << "Account type: ";
     cin >> type; type = toLower(type);
 
-    if(type != "s" && type != "c") {
+    if(type != "savings" && type != "checking") {
         setColor(12); cout << "Invalid account type!\n"; setColor(7);
         return;
     }
@@ -168,7 +168,7 @@ void createAccount(vector<SavingsAccount>& sa, vector<CheckingAccount>& ca) {
     }
     double deposit = stod(deposit_str);
 
-    if(type == "s") {
+    if(type == "savings") {
         SavingsAccount acc(acc_no, name, simple_hash(password), deposit);
         sa.push_back(acc);
         saveSavingsAccounts(sa);
